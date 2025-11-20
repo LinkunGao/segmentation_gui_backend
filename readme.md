@@ -10,13 +10,16 @@ uvicorn main:app --reload
 
 ### Docker
 
-- build
+- start
 ```bash
 docker-compose up
 ```
-- uninstall
+- shutdown
 ```bash
 docker-compose down
 ```
-- paste your original dicom cases into ~/primary.
-- update your manifest.xlsx file.
+
+## Set up SPARC dataset
+
+- copy all contents of the SPARC dataset rather than the dataset folder itself.
+- paste all contents in `./data` folder. 
