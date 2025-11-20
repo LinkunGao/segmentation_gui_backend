@@ -22,7 +22,8 @@ class Config:
     Updated_Mesh = False
     ClearAllMask = False
     Current_Case_Name = ""
-    BASE_PATH = Path(get_base_from_env())
+    # BASE_PATH = Path(get_base_from_env())
+    BASE_PATH = Path('./data')
     METADATA_PATH = "./manifest.xlsx"
     MASK_FILE_PATH = ""
     MASK_FOLDER_PATH = ""

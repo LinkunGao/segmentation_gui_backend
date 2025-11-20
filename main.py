@@ -236,7 +236,6 @@ async def get_mask(name: str = Query(None)):
 @app.get("/api/breast_points")
 async def get_breast_points(name: str = Query(None), filename: str = Query(None)):
 
-    print(filename)
     checked = tools.check_file_exist(name, "json", f"{filename}.json")
     if checked:
         path = tools.get_file_path(name, "json", f"{filename}.json")
